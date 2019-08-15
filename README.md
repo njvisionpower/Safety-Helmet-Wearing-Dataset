@@ -11,7 +11,7 @@ This repo provide the dataset which can be used for both safety helmet wearing a
 ## Download
 [BaiduDrive](https://pan.baidu.com/s/19GcMnmdmC1RpSpFJisRTFQ)
 [GoogleDrive](https://pan.baidu.com/s/19GcMnmdmC1RpSpFJisRTFQ)
-### How to use
+## How to use
 We annotate the data as VOC format:  
 
 ```
@@ -20,4 +20,6 @@ We annotate the data as VOC format:
     ---ImageSets    
     ---JPEGImages   
 ```
-There are two object class names, hat for safety hemlet wearing object and person for normal head.    
+There are two object class names, hat for safety hemlet wearing object and person for normal head.
+## Train and test
+Will release soon.
