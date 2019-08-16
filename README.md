@@ -10,7 +10,7 @@ This repo provide the dataset which can be used for both safety helmet wearing a
 
 ## Download
 [BaiduDrive](https://pan.baidu.com/s/19GcMnmdmC1RpSpFJisRTFQ)
-[GoogleDrive](https://pan.baidu.com/s/19GcMnmdmC1RpSpFJisRTFQ)
+[GoogleDrive](https://drive.google.com/open?id=1qWm7rrwvjAWs1slymbrLaCf7Q-wnGLEX)
 ## How to use
 We annotate the data as VOC format:  
 
