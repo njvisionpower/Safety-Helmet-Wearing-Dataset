@@ -1,5 +1,5 @@
 # SafetyHelmetWearing-Dataset(安全帽佩戴检测数据集)
-Safety helmet wearing and head detect dataset, with pretrained model   
+Safety helmet wearing and head detect dataset(安全帽佩戴检测数据集), with pretrained model   
 
 ## Introduction
 This repo provide the dataset which can be used for both safety helmet wearing and head detection. It includes 7581 images with 9044 human safety helmet wearing objects and 111514 normal head(not wearing) objects. The safety helmet wearing images comes from goolge or baidu and we manually label with LabelImg. Some of normal head got from [SCUT-HEAD](https://github.com/HCIILAB/SCUT-HEAD-Dataset-Release). I fixed some bugs on original SCUT-HEAD exists bugs to make it can be directly loaded as normal Pascal VOC format. Also we provide some pretrained models with MXNet gluoncv.    
