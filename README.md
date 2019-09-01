@@ -27,11 +27,14 @@ Two object class names for the task, "hat" for positive object and "person" for 
 ### Dependency
 Make sure you install MXNet, GluonCV, OpenCV
 ### Test with pretrained models
-**1.** Download models from link.  
-**2.** Run "python test_yolo.py" with default settings, or change options:  
---network: darknet/mobile1.0/mobile0.25 network, default darknet53  
---threshold: confidence that filter object.  
---gpu: use gpu or cpu, default gpu  
+```
+1. Download models from link.  
+2. Run "python test_yolo.py" with default settings, or change options:  
+--network: darknet/mobile1.0/mobile0.25 network, default darknet53;  
+--threshold: confidence that filter object;  
+--gpu: use gpu or cpu, default gpu;  
+--short: short side input size for original image.
+```
 ### Notice
 **1.** This repo provide 3 yolo models with different size, default darknet53.  
 **2.** Parameter "short" means the input size of short side for original image, you can try larger value if want to detect dense objects or big size image.  
