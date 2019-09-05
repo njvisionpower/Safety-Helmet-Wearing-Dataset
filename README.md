@@ -1,5 +1,5 @@
 # SafetyHelmetWearing-Dataset(安全帽佩戴检测数据集)
-Safety helmet wearing and head detect dataset(安全帽佩戴检测数据集, SHWD). We also provide pretrained models.
+Safety helmet (hardhat) wearing detect dataset(安全帽佩戴检测数据集, SHWD). We also provide pretrained models.
 
 ## Introduction
 SHWD provide the dataset used for both safety helmet wearing and human head detection. It includes 7581 images with 9044 human safety helmet wearing objects(positive) and 111514 normal head objects(not wearing or negative). The positive objects got from goolge or baidu, and we manually labeld with LabelImg. Some of negative objects got from [SCUT-HEAD](https://github.com/HCIILAB/SCUT-HEAD-Dataset-Release). We fixed some bugs for original SCUT-HEAD and make the data can be directly loaded as normal Pascal VOC format. Also we provide some pretrained models with MXNet GluonCV.    
@@ -17,7 +17,7 @@ SHWD provide the dataset used for both safety helmet wearing and human head dete
 ### Benchmark
 model | darknet | mobile1.0 |  mobile0.25
 --------- | ------------- | ------------- | ------------- 
-map   | 88.5 | 86.3 | 75.0
+map   |  88.5 |  86.3 |  75.0
 
 ## How to use dataset
 We annotate the data as Pascal VOC format:  
