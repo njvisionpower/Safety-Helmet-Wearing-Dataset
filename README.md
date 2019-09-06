@@ -32,6 +32,8 @@ Two object class names for the task, "hat" for positive object and "person" for 
 ### Dependency
 Make sure you install MXNet, GluonCV, OpenCV
 ### Test with pretrained models
+Two way to inference. 
+#### First way
 ```
 1. Download models from link.  
 2. Run "python test_yolo.py" with default settings, or change options:  
@@ -39,6 +41,11 @@ Make sure you install MXNet, GluonCV, OpenCV
 --threshold: confidence that filter object;  
 --gpu: use gpu or cpu, default gpu;  
 --short: short side input size for original image.
+```
+#### Second way, inference with mxnet symbol
+Download models from [Symbol](https://pan.baidu.com/s/1EEdsjECJy_y00dekRre0eA), then inference with symbol:
+```
+python test_symbol.py
 ```
 ### Notice
 **1.** This repo provide 3 yolo models with different size, default darknet53.  
