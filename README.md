@@ -51,6 +51,21 @@ python test_symbol.py
 **1.** This repo provide 3 yolo models with different size, default darknet53.  
 **2.** Parameter "short" means the input size of short side for original image, you can try larger value if want to detect dense objects or big size image.  
 **3.** Hyper-parameter threshold means the confidence for detect, change it for different task.  
+
+## How to train
+You can see function "get_dataset" in the file "train_yolo.py" to set dataset path. An example, download dataset and unzip to the path such as "D:\VOCdevkit\VOC2028", train/val dataset can set as:
+```
+train_dataset = VOCLike(root='D:\VOCdevkit', splits=[(2028, 'trainval')])
+val_dataset = VOCLike(root='D:\VOCdevkit', splits=[(2028, 'test')])
+```
+Then check train_yolo.py to set options and train, such as:
+```
+python train_yolo.py --batch-size 4 -j 4 --warmup-epochs 3
+```
+### Notice
+**1.** One common problem when train yolo is gradient explosion, try more epoches to warmup or use smalle learning rate.  
+**2.** Much time spent on dataset loading with CPU, set "-j" bigger if you have multi-core CPU and will improve train speed.  
+**3.** If train on Windows, sometimes program may blocked, see https://discuss.gluon.ai/t/topic/9388/11, if train on Linux make sure you have enough share memory.
 ## Demo
 <p align="center"> 
 <img src="https://github.com/njvisionpower/SafetyHelmetWearing-Dataset/blob/master/image/3_result.jpg" width = 50% height = 50%>
