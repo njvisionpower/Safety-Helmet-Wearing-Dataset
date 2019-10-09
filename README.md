@@ -63,8 +63,8 @@ Then check train_yolo.py to set options and train, such as:
 python train_yolo.py --batch-size 4 -j 4 --warmup-epochs 3
 ```
 ### Notice
-**1.** One common problem when train yolo is gradient explosion, try more epoches to warmup or use smalle learning rate.  
-**2.** Much time spent on dataset loading with CPU, set "-j" bigger if you have multi-core CPU and will improve train speed.  
+**1.** One common problem when train yolo is gradient explosion, try more epoches to warmup or use smaller learning rate.  
+**2.** Much time spent on dataset loading with CPU, set "-j" number bigger if you have multi-core CPU and will improve train speed.  
 **3.** If train on Windows, sometimes program may blocked, see https://discuss.gluon.ai/t/topic/9388/11, if train on Linux make sure you have enough share memory.
 ## Demo
 <p align="center"> 
