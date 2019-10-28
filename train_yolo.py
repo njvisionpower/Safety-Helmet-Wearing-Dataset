@@ -43,7 +43,7 @@ def parse_args():
     parser.add_argument('--dataset', type=str, default='voc',
                         help='Training dataset. Now support voc.')
     parser.add_argument('--num-workers', '-j', dest='num_workers', type=int,
-                        default=4, help='Number of data workers, you can use larger '
+                        default=0, help='Number of data workers, you can use larger '
                         'number to accelerate data loading, if you CPU and GPUs are powerful.')
     parser.add_argument('--gpus', type=str, default='0',
                         help='Training with GPUs, you can specify 1,3 for example.')
@@ -319,10 +319,10 @@ if __name__ == '__main__':
     # use sync bn if specified
     if args.syncbn and len(ctx) > 1:
         net = get_model(net_name, pretrained_base=True, norm_layer=gluon.contrib.nn.SyncBatchNorm,
-                        norm_kwargs={'num_devices': len(ctx)})
-        async_net = get_model(net_name, pretrained_base=False)  # used by cpu worker
+                        norm_kwargs={'num_devices': len(ctx)}, transfer='voc',classes=classes) #fix to transfer
+        async_net = get_model(net_name, pretrained_base=False, classes=classes)  # used by cpu worker
     else:
-        net = get_model(net_name, pretrained_base=True)
+        net = get_model(net_name, pretrained_base=True, classes=classes)
         async_net = net
     if args.resume.strip():
         net.load_parameters(args.resume.strip())
