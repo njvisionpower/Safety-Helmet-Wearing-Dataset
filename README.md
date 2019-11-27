@@ -34,9 +34,9 @@ Make sure you install MXNet, GluonCV, OpenCV
 ### Test with pretrained models
 Two way to inference. 
 #### First way
+Download models from link [BaiduDrive](https://pan.baidu.com/s/1dWNU_q59sw1a3TVtV7VXEg).  
 ```
-1. Download models from link (https://pan.baidu.com/s/1dWNU_q59sw1a3TVtV7VXEg).  
-2. Run "python test_yolo.py" with default settings, or change options:  
+Run "python test_yolo.py" with default settings, or change options:  
 --network: darknet/mobile1.0/mobile0.25 network, default darknet53;  
 --threshold: confidence that filter object;  
 --gpu: use gpu or cpu, default gpu;  
