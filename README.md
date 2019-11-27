@@ -35,7 +35,7 @@ Make sure you install MXNet, GluonCV, OpenCV
 Two way to inference. 
 #### First way
 ```
-1. Download models from link.  
+1. Download models from link (https://pan.baidu.com/s/1dWNU_q59sw1a3TVtV7VXEg).  
 2. Run "python test_yolo.py" with default settings, or change options:  
 --network: darknet/mobile1.0/mobile0.25 network, default darknet53;  
 --threshold: confidence that filter object;  
