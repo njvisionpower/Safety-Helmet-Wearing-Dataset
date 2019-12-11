@@ -14,6 +14,7 @@ SHWD provide the dataset used for both safety helmet wearing and human head dete
 [GoogleDrive](https://drive.google.com/open?id=1qWm7rrwvjAWs1slymbrLaCf7Q-wnGLEX)
 ### Model
 [BaiduDrive](https://pan.baidu.com/s/1dWNU_q59sw1a3TVtV7VXEg)
+[GoogleDrive](https://drive.google.com/open?id=1_0A-bQbsprzStefQOMiQpLn8JZBchqho)
 ### Benchmark
 model | darknet | mobile1.0 |  mobile0.25
 --------- | ------------- | ------------- | ------------- 
@@ -43,7 +44,7 @@ Run "python test_yolo.py" with default settings, or change options:
 --short: short side input size for original image.
 ```
 #### Second way, inference with mxnet symbol
-Download models from [Symbol](https://pan.baidu.com/s/1EEdsjECJy_y00dekRre0eA), then inference with symbol:
+Download symbol models from [BaiduDrive](https://pan.baidu.com/s/1EEdsjECJy_y00dekRre0eA), (or [GoogleDrive](https://drive.google.com/open?id=19iS7fdVneX1HTYQb3iQAbDJnpa0W9asB)), then inference with symbol:
 ```
 python test_symbol.py
 ```
